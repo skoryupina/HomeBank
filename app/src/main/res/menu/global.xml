@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_add"
+        android:title="@string/action_add" />
+
+    <item android:id="@+id/find_operations"
+        android:title="@string/find_operations" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/global_about"/>
+
+    <item
+        android:id="@+id/action_exit"
+        android:title="@string/global_exit"/>
+</menu>

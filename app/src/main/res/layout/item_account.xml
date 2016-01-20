@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="#ffebeff1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_task_mainview"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#E3F7F7"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="@string/time_in_scheduler_layout"
+            android:textColor="#001388"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:layout_alignTop="@+id/tvAccount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="55dp" />
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/category_in_scheduler_layout"
+            android:textColor="#001388"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>
+

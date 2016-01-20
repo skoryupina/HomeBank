@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.github.skoryupina.homebank.view.CategoriesActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_new_category_name"
+            android:id="@+id/newCategoryName"
+            android:textStyle="italic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/radioPriority" />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioPriority"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/button" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/incomeRadio"
+                    android:checked="true"/>
+                <ImageView
+                    android:id="@+id/incomeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/income" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/outlayRadio"/>
+                <ImageView
+                    android:id="@+id/outlayIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/outlay"/>
+            </RadioGroup>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_add"
+            android:id="@+id/button"
+            android:layout_alignParentEnd="true"
+            android:onClick="insertCategory"
+            android:layout_alignBottom="@+id/newCategoryName"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/lvCategories"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#001388"
+            android:dividerHeight="1dp">
+        </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.github.skoryupina.homebank.view.NewOperationActivity"
+    android:background="#f0f0f0">
+
+    <ListView
+        android:id="@+id/lvOperations"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#001388"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
